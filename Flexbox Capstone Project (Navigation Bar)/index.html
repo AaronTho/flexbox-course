@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="media-queries.css" />
+    <title>Flexbox Capstone</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .container {
+      background-color: rgb(55, 55, 94);
+      color: white;
+      font-family: "Merriweather Sans", sans-serif;
+      height: 10vh;
+    }
+    .container .navbar-wrapper {
+      display: flex;
+      width: 100vw;
+      align-items: center;
+      height: 10vh;
+    }
+
+    .logo {
+      flex-basis: 200px;
+      background-color: white;
+      margin-right: 15px;
+    }
+
+    .logo:hover {
+      cursor: pointer;
+    }
+
+    img {
+      height: 10vh;
+    }
+
+    .links-wrapper {
+      display: flex;
+      width: 100vw;
+      align-items: center;
+    }
+
+    .navbar-wrapper > .links-wrapper > .link1 {
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 42px;
+      justify-content: center;
+      width: 100px;
+    }
+
+    .navbar-wrapper > .links-wrapper > .link1:hover {
+      background-color: white;
+      color: darkblue;
+      cursor: pointer;
+    }
+
+    .navbar-wrapper > .links-wrapper > .link2 {
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 100px;
+      justify-content: center;
+    }
+
+    .navbar-wrapper > .links-wrapper > .link2:hover {
+      background-color: white;
+      color: darkblue;
+      cursor: pointer;
+    }
+
+    .navbar-wrapper > .link3 {
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 126px;
+      justify-content: center;
+      justify-items: flex-end;
+    }
+
+    .navbar-wrapper > .link3:hover {
+      background-color: white;
+      color: darkblue;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="navbar-wrapper">
+        <div class="logo">
+          <img src="images/images.png" alt="" />
+        </div>
+        <div class="links-wrapper">
+          <div class="link1">Menu</div>
+          <div class="link2">Fried Bits</div>
+        </div>
+        <div class="link3">The Bar</div>
+      </div>
+    </div>
+  </body>
+</html>
